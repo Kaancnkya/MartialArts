@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#F1A0A0">
+
+    <TextView
+        android:id="@+id/detailsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="#DA1111"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="TITTLE" />
+
+    <ImageView
+        android:id="@+id/imageViewDetails"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detailsTextView"
+        tools:src="@drawable/ic_jiujitsu" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewDetails">
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Brezilya jiu-jitsusu (BJJ) veya (Portekizce: jiu-jitsu brasileiro) bir savaş sanatı ve dövüş sporu sistemi olup tutuşlar, boğma, atma ve yer pozisyonları ile dövüş yapma üzerine teksif olmaktadır. Brezilya jiu-jitsu'su, Kodokan judo ustaları olan Takeo Yano, Mitsuyo Maeda, Soshihiro Satake gibi ustalar tarafından Kodokan judo dövüş sanatının yer pozisyonlarını (newaza) temel alıp geliştirilmiş ve öğretilmeye başlanmıştır .
+BJJ'deki teknikler; eğiticiler, okullar, ekoller ve ülkeler gibi birçok katkıda bulunanlar tarafından çeşitlendirilmiştir. Burada açıklanan teknikler; yaygın olarak kullanılan ve adından sıkça bahsedilen bazı uygulamaların, Türkçe dilini kullananlar tarafından kolayca incelenmesi için verilmiştir. Tekniklerden sadece genel bir fikir verecek şekilde bahsedilmiştir, uygulamanın bu sporun eğitimini veren kişilerin kontrol ve gözetiminde yapılması gerekmektedir."
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageViewDetails" />
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
